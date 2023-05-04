@@ -1,0 +1,23 @@
+﻿<Window x:Class="Socket_5I.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Socket_5I"
+        mc:Ignorable="d"
+        Title="MainWindow" ResizeMode="NoResize" Height="366" Width="578">
+    <Grid>
+        <Label x:Name="lbl_Port" Content="Me" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Height="27"/>
+        <Label x:Name="lbl_Selected" Content="Contact" HorizontalAlignment="Left" Margin="265,6,0,0" VerticalAlignment="Top" Height="27"/>
+        <ListBox x:Name="lbx_Rubrica" HorizontalAlignment="Left" Height="203" Margin="10,33,0,0" VerticalAlignment="Top" Width="250" SelectionChanged="lbx_Rubrica_SelectionChanged"/>
+        <TextBox x:Name="txb_Ip" HorizontalAlignment="Left" Height="23" Margin="10,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txt_Porta" HorizontalAlignment="Left" Height="23" Margin="165,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95"/>
+        <TextBox x:Name="txb_Nome" HorizontalAlignment="Left" Height="23" Margin="10,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="btn_Aggiungi" Content="Add" HorizontalAlignment="Left" Margin="165,269,0,0" VerticalAlignment="Top" Width="95" Click="btnAggiungi_Click" Height="23"/>
+        <ListBox x:Name="lbx_Messaggi" HorizontalAlignment="Left" Height="203" Margin="265,33,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txt_Messaggio" HorizontalAlignment="Left" Height="23" Margin="265,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <Button x:Name="btn_Broadcast" Content="Broadcast" HorizontalAlignment="Left" Margin="265,269,0,0" VerticalAlignment="Top" Width="120" Click="btnBroadcast_Click" Height="23"/>
+        <Button x:Name="btn_Invia" Content="Invia" HorizontalAlignment="Left" Margin="390,269,0,0" VerticalAlignment="Top" Width="125" Click="btnInvia_Click" Height="23"/>
+
+    </Grid>
+</Window>
