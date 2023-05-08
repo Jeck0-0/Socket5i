@@ -107,7 +107,6 @@ namespace Socket_5I
             AggiornaUI();
         }
 
-
         private void AggiornaUI()
         {
             Contatto selectedContact = lbx_Rubrica.SelectedItem as Contatto;
