@@ -45,6 +45,7 @@ namespace Socket_5I
         private Task WaitForMessage()
         {
             byte[] buffer = new byte[512];
+
             EndPoint remoteEndPoint = new IPEndPoint(IPAddress.Any, 0);
 
             while (true)
